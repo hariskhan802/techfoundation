@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->bigInteger('user_id');
             $table->enum('parent_type', ['mother', 'father']);
+            $table->softDeletes();
             $table->timestamps();
         });
     }

@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->bigInteger('staff_id');
             $table->bigInteger('salary');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

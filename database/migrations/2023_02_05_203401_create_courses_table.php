@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('name');
             $table->text('description')->nullable();
             $table->bigInteger('duration_hours');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

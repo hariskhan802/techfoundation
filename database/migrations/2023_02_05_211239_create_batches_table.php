@@ -19,6 +19,7 @@ return new class extends Migration
             $table->bigInteger('teacher_id');
             $table->string('start_time');
             $table->string('end_time');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

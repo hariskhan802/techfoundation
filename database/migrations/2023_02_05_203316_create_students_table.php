@@ -20,6 +20,7 @@ return new class extends Migration
             $table->bigInteger('device_id');
             $table->bigInteger('batch_id');
             $table->integer('is_paid')->default('0');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

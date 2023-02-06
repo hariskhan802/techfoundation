@@ -19,6 +19,7 @@ return new class extends Migration
             $table->bigInteger('teacher_id');
             $table->bigInteger('total_marks')->default('10');
             $table->bigInteger('obtained_marks');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

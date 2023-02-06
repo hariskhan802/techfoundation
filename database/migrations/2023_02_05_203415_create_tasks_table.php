@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('video_link')->nullable();
             $table->text('description')->nullable();
             $table->bigInteger('duration_hours');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

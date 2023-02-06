@@ -18,6 +18,7 @@ return new class extends Migration
             $table->bigInteger('student_id');
             $table->bigInteger('teacher_id');
             $table->bigInteger('is_completed');
+            $table->softDeletes();
             $table->timestamps();
         });
     }
